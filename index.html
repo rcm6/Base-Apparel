@@ -6,11 +6,41 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Base Apparel Coming Soon Page | Frontend Mentor</title>
 </head>
+
+
+<style>
+  #logo, #hero, #content {
+      width: 100%;
+  }
+
+  @media (min-width: 768px) {
+      #logo, #content {
+          width: 50%;
+          float: left;
+      }
+
+      #hero {
+          width: 50%;
+          float: right;
+      }
+  }
+</style>
+
+
+
 <body>
-  <!-- Header section with site title -->
-  <header role="banner">
-    <h1>Base Apparel Coming Soon</h1>
-  </header>
+
+
+  <div id="logo">
+    <img src="images/logo.svg" alt="Base Apparel Logo">
+  </div>
+  <div id="hero">
+    <img src="images/hero-desktop.jpg" alt="hero image">
+
+  </div>
+  <div id="content">
+
+  
   
   <!-- Main content section -->
   <main role="main">
@@ -26,6 +56,8 @@
     <button type="submit" aria-label="Subscribe">Subscribe</button>
   </main>
   
+</div>
+
   <footer>
     <!-- Attribution and source information -->
     <p class="attribution">
